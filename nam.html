@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kiem Tra Nam Nhuan</title>
+</head>
+<body>
+<h1>Kiem Tra Nam Nhuan</h1>
+<label for="yearInput">Nhap Nam:</label>
+<input type="number" id="yearInput">
+<button onclick="checkLeapYear()">Check</button>
+<p id="result"></p>
+
+<script>
+    function checkLeapYear() {
+        var year = document.getElementById("yearInput").value;
+        var result = document.getElementById("result");
+
+        if (year % 4 == 0) {
+            result.innerHTML = year + " Nam Nhuan.";
+        } else {
+            result.innerHTML = year + " Nam Thuong.";
+        }
+    }
+</script>
+</body>
+</html>
